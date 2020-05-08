@@ -1,0 +1,210 @@
+/*
+cиний #2196F3
+белый #ffffff
+черный #000000
+темно-серый #212121
+светло-серый #757575
+
+вторичный цвет фона секций #F5F4FA
+цвет фона футера #2F303A
+*/
+
+body {
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  color: #757575;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #212121;
+}
+
+.list {
+  /* убирем точки в списках, где это необходимо */
+  list-style: none;
+}
+
+.link-button {
+  color: #ffffff;
+  background-color: #2196f3;
+  text-decoration: none;
+}
+
+/* header */
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.logo-accent {
+  color: #000000;
+}
+
+/* nav-header */
+
+.header-nav .nav-link {
+  color: #212121;
+  text-decoration: none;
+}
+
+.header-nav .nav-link-current {
+  color: #2196f3;
+}
+
+.header-nav .nav-link:hover {
+  color: #2196f3;
+  text-decoration: underline;
+}
+
+/* contact header */
+.header-mail,
+.header-phone {
+  color: #757575;
+  text-decoration: none;
+}
+
+.header-mail:hover,
+.header-mail:focus,
+.header-phone:hover,
+.header-phone:focus {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+/* hero */
+.hero {
+  background-color: #757575;
+}
+.hero-title {
+  color: #ffffff;
+}
+
+/* advantages - преимущества */
+.advantages-title {
+  /* скрытый заголовк */
+}
+
+.advantages-item h3 {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.advantages-item p {
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+}
+
+/* services */
+.services {
+  background-color: #757575;
+}
+
+.services-title {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.services-item h3 {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.services-item a {
+  text-decoration: none;
+}
+
+/* team */
+.team-title {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-item h3 {
+  /* name */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-item p {
+  /* position */
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.clients h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* footer */
+.footer {
+  background-color: #2f303a;
+}
+
+.footer address {
+  /* весь блок адреса */
+  font-style: normal;
+}
+
+.footer-address {
+  /* город, улица, дом */
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer-mail,
+.footer-phone {
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.footer-social b,
+.subscribe b {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.copy {
+  font-size: 12px;
+  line-height: 24px;
+  /* or 200% */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.4);
+}
