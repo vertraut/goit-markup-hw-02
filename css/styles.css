@@ -9,10 +9,18 @@ cиний #2196F3
 цвет фона футера #2F303A
 */
 
+:root {
+  --primery-text-color: #757575;
+  --accent-color: #2196f3;
+  --light-color: #ffffff;
+  --dark-color: #212121;
+}
+
 body {
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
-  color: #757575;
+  color: var(--primery-text-color);
+  letter-spacing: 0.03em;
 }
 
 h1,
@@ -21,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #212121;
+  color: var(--dark-color);
 }
 
 .list {
@@ -29,18 +37,19 @@ h6 {
   list-style: none;
 }
 
-.link-button {
-  color: #ffffff;
-  background-color: #2196f3;
+.button {
+  font-family: inherit;
+  color: var(--light-color);
+  background-color: var(--accent-color);
   text-decoration: none;
 }
 
 /* header */
 
-.logo {
+.header-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  color: #2196f3;
+  color: var(--accent-color);
   text-decoration: none;
 }
 
@@ -56,18 +65,19 @@ h6 {
 }
 
 .header-nav .nav-link-current {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
-.header-nav .nav-link:hover {
-  color: #2196f3;
+.header-nav .nav-link:hover,
+.header-nav .nav-link:focus {
+  color: var(--accent-color);
   text-decoration: underline;
 }
 
 /* contact header */
 .header-mail,
 .header-phone {
-  color: #757575;
+  color: var(--primery-text-color);
   text-decoration: none;
 }
 
@@ -75,7 +85,7 @@ h6 {
 .header-mail:focus,
 .header-phone:hover,
 .header-phone:focus {
-  color: #2196f3;
+  color: var(--accent-color);
   text-decoration: none;
 }
 
@@ -84,7 +94,8 @@ h6 {
   background-color: #757575;
 }
 .hero-title {
-  color: #ffffff;
+  color: var(--light-color);
+  text-transform: uppercase;
 }
 
 /* advantages - преимущества */
@@ -95,7 +106,7 @@ h6 {
 .advantages-item h3 {
   font-size: 14px;
   line-height: 16px;
-  letter-spacing: 0.03em;
+
   text-transform: uppercase;
 }
 
@@ -103,7 +114,6 @@ h6 {
   font-size: 14px;
   line-height: 24px;
   /* or 171% */
-  letter-spacing: 0.03em;
 }
 
 /* services */
@@ -115,15 +125,14 @@ h6 {
   font-size: 36px;
   line-height: 42px;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .services-item h3 {
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+
+  color: var(--light-color);
   text-transform: uppercase;
 }
 
@@ -136,7 +145,6 @@ h6 {
   font-size: 36px;
   line-height: 42px;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .team-item h3 {
@@ -146,7 +154,6 @@ h6 {
   line-height: 19px;
   /* identical to box height */
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .team-item p {
@@ -155,7 +162,21 @@ h6 {
   line-height: 19px;
   /* identical to box height */
   text-align: center;
-  letter-spacing: 0.03em;
+}
+
+.team-social-list a {
+  color: #afb1b8;
+  text-decoration: none;
+}
+
+.team-social-list a:hover,
+.team-social-list a:focus {
+  color: var(--light-color);
+  background-color: var(--accent-color);
+}
+
+.team-social-list li {
+  display: inline;
 }
 
 .clients h2 {
@@ -163,12 +184,22 @@ h6 {
   font-size: 36px;
   line-height: 42px;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 /* footer */
 .footer {
   background-color: #2f303a;
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.footer-logo .logo-accent {
+  color: #ffffff;
 }
 
 .footer address {
@@ -179,18 +210,14 @@ h6 {
 .footer-address {
   /* город, улица, дом */
   font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-  letter-spacing: 0.03em;
+  line-height: 1.71;
   color: #ffffff;
 }
 
 .footer-mail,
 .footer-phone {
   font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-  letter-spacing: 0.03em;
+  line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
@@ -202,9 +229,70 @@ h6 {
 }
 .copy {
   font-size: 12px;
-  line-height: 24px;
-  /* or 200% */
+  line-height: 2;
   text-align: center;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.4);
+}
+
+.footer-social-list li {
+  display: inline;
+}
+
+.footer-social-list a {
+  color: var(--light-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+.footer-social-list a:hover,
+.footer-social-list a:focus {
+  color: var(--accent-color);
+  background-color: var(--light-color);
+  text-decoration: none;
+}
+
+/* portfolio */
+
+/* filter */
+
+.filter-item button {
+  font-family: inherit;
+  color: var(--dark-color);
+  background-color: #f5f4fa;
+}
+
+.filter-item button:hover,
+.filter-item button:focus {
+  color: var(--light-color);
+  background-color: var(--accent-color);
+}
+
+.filter > li {
+  display: inline;
+}
+.example > li {
+  background: #ffffff;
+}
+.portfolio h2 {
+  color: var(--dark-color);
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.06em;
+}
+
+.portfolio a {
+  text-decoration: none;
+}
+
+.portfolio .element-type {
+  color: var(--primery-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+}
+
+.portfolio .element-disc {
+  color: #ffffff;
+  background-color: var(--accent-color);
 }
