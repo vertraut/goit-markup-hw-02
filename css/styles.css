@@ -64,6 +64,10 @@ h6 {
   text-decoration: none;
 }
 
+.header-nav li {
+  display: inline;
+}
+
 .header-nav .nav-link-current {
   color: var(--accent-color);
 }
